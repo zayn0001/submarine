@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Dashboard from './Dashboard';
-import './index.css';
 import Login from './Login';
 import Navbar from './Navbar/Navbar';
 import reportWebVitals from './reportWebVitals';
+import './index.css'
 
 ReactDOM.render(
-  <Navbar/>,
+  <Login/>,
   document.getElementById('root')
 );
  

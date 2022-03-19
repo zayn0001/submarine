@@ -1,5 +1,5 @@
 import React from "react";
-import logo from './Navbar/logo192.png'
+import logo from './Navbar/new.png'
 import { A } from "hookrouter";
 
 class Profile extends React.Component {
@@ -8,7 +8,7 @@ class Profile extends React.Component {
         <div className="profile">
           <div className="leftpart">
             <div className="imageholder rounded-circle"><img src={logo} className="rounded-circle"/></div>
-            <div className="titletext">Profile person name</div>
+            <div className="titletext">person name</div>
           </div>
           <div className="rightpart">
 
@@ -35,7 +35,7 @@ class Profile extends React.Component {
             <div className="section settings">
               <div className="section-title">Settings</div>
               <div className="item">
-                <A href="/changepass" className="label" style={{color:"lightblue"}}>Reset Password</A>
+                <A href="/changepass" className="label" style={{color:"#35589A"}}>Reset Password</A>
               </div>
             </div>
 

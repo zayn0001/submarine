@@ -1,26 +1,28 @@
-import './Login.css'
+
 import {useRoutes, A, navigate} from 'hookrouter';
 import Routes from './router'
-  
+import Navbar from './Navbar/Navbar';
+import ReactDOM from 'react-dom';
 
 
 function Login() {
   async function handleSubmit(event) {
+    console.log("Sdfsdfsd")
     event.preventDefault()
-    window.location.replace('www.google.com')
+    ReactDOM.render(<Navbar/>, document.getElementById("root"))
+    navigate('/dashboard')
   }
-  const routeResult = useRoutes(Routes)
   return (
     <form id="form" className="loginbox" >
       <h1 className="logintag">Login</h1>
       <div className='logintag'>
-      <input type="text" className='username' name='username' placeholder='Username' required></input>
+      <input type="text" className='linetext username' name='username' placeholder='Username' required></input>
       </div>
       <div className='logintag'>
-      <input type="password" className='password' name='password' placeholder='Password' required></input>
+      <input type="password" className='linetext password' name='password' placeholder='Password' required></input>
       </div>
       <div className='logintag submitbox'>
-      <input type="submit" className='submit' name='submit' value="Login" onSubmit={handleSubmit}></input>
+      <button type="submit" className='submit' name='submit' value="Login" onClick={handleSubmit}>Login</button>
       </div>
     </form>
   );
