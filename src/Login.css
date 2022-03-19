@@ -1,0 +1,113 @@
+body {
+    background: url('./background.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+.loginbox {
+    position: absolute;
+    top: 30vh;
+    left: 40vw;
+    width: 22vw;
+    height: 30vh;
+}
+
+.logintag {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.username, .password {
+    width: 20vw;
+    max-width: 300px;
+    height: 40px;
+}
+
+.submitbox {
+    position: relative;
+    top: 40px;
+    left: 170px;
+}
+
+.submit {
+    background-color: transparent;
+    border: transparent;
+    color: white;
+}
+
+.profile {
+    height: 80vh;
+    margin: 60px;
+    background-color: #F2F3F4;
+    opacity: 0.9;
+   border-radius: 1em;
+}
+
+.leftpart {
+    background-color: #E74C3C;
+    width: 30%;
+    height: 100%;
+    border-radius: inherit;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+    float: left;
+}
+
+.rightpart {
+    float: left;
+    background-color: #85929E;
+    width: 70%;
+    height: 100%;
+    border-radius: inherit;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+}
+
+.imageholder {
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+    margin-top: 30%;
+}
+
+.titletext {
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    margin-top: 20%;
+    font-weight: bold;
+    color: white;
+}
+
+.section {
+    font-size: x-large;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.section-title {
+    font-size: xx-large;
+    margin-bottom: 2vh;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.item {
+    margin-bottom: 2vh;
+}
+
+.name {
+    margin-right: 30vw;
+    float: left;
+}
+label:hover {
+    color: #E74C3C;
+}
+
