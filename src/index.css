@@ -108,6 +108,7 @@ A:active, A:hover, A:visited {
 
 .label {
   font-weight: bold;
+  font-size: x-large;
 }
 
 .item {
