@@ -7,7 +7,7 @@ class Dashboard extends React.Component {
       <>
       <div className="profile">
         <div className="leftpart"></div>
-        <div className="rightpart">ithaan dashboard</div>
+        <div className="rightpart"></div>
       </div>
       </>
     );

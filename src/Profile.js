@@ -1,5 +1,5 @@
 import React from "react";
-import logo from './cat.jpg'
+import logo from './Navbar/Placeholder.png'
 import { A } from "hookrouter";
 
 class Profile extends React.Component {

@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Navbar.css";
-import logo from './catlogo.jpg'
+import logo from './Placeholder.png'
 import {useRoutes, A, navigate} from 'hookrouter';
 import Routes from './../router'
 
