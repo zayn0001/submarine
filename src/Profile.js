@@ -35,7 +35,7 @@ class Profile extends React.Component {
             <div className="section settings">
               <div className="section-title">Settings</div>
               <div className="item">
-                <A href="/changepass" className="label click" style={{color:"#35589A"}}>Reset Password</A>
+                <A href="/changepass" className="label click">Reset Password</A>
               </div>
             </div>
 
