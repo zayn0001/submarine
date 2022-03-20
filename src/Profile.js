@@ -1,5 +1,5 @@
 import React from "react";
-import logo from './Navbar/new.png'
+import logo from './cat.jpg'
 import { A } from "hookrouter";
 
 class Profile extends React.Component {
@@ -35,7 +35,7 @@ class Profile extends React.Component {
             <div className="section settings">
               <div className="section-title">Settings</div>
               <div className="item">
-                <A href="/changepass" className="label" style={{color:"#35589A"}}>Reset Password</A>
+                <A href="/changepass" className="label click" style={{color:"#35589A"}}>Reset Password</A>
               </div>
             </div>
 
