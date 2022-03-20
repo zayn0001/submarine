@@ -134,7 +134,7 @@ label:hover {
 }
 
 .click {
-  color: rgb(95,174,182);
+  color: black;
   border: 1px solid white;
   border-radius: 1em;
   padding: 5px;
