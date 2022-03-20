@@ -7,7 +7,7 @@ class Profile extends React.Component {
     return (
         <div className="profile">
           <div className="leftpart">
-            <div className="imageholder rounded-circle"><img src={logo} className="rounded-circle"/></div>
+            <div className="imageholder rounded-circle"><img src={logo} className="rounded-circle proimage"/></div>
             <div className="titletext">person name</div>
           </div>
           <div className="rightpart">

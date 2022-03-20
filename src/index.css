@@ -26,7 +26,7 @@ A:active, A:hover, A:visited {
 
 .logintag {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin-bottom: 15px;
   color: white;
 }
@@ -37,16 +37,12 @@ A:active, A:hover, A:visited {
   height: 40px;
 }
 
-.submitbox {
-  position: relative;
-  top: 40px;
-  left: 170px;
-}
-
 .submit {
-  background-color: transparent;
   border: transparent;
-  color: white;
+  background-color: white;
+  color: gray;
+  font-weight: bold;
+  border-radius: 0.4em;
 }
 
 .profile {
@@ -87,10 +83,10 @@ A:active, A:hover, A:visited {
 .titletext {
   display: flex;
   justify-content: center;
-  font-size: x-large;
   margin-top: 20%;
   font-weight: bold;
   color: white;
+  font-size: 2.6vw;
 }
 
 .section {
@@ -100,7 +96,7 @@ A:active, A:hover, A:visited {
 }
 
 .section-title {
-  font-size: xx-large;
+  font-size: 2.6vw;
   margin-bottom: 2vh;
   color: rgb(230, 213, 184);
   font-weight: bold;
@@ -108,7 +104,7 @@ A:active, A:hover, A:visited {
 
 .label {
   font-weight: bold;
-  font-size: x-large;
+  font-size: 1.6vw;
 }
 
 .item {
@@ -116,13 +112,66 @@ A:active, A:hover, A:visited {
 }
 
 .name {
-  margin-right: 30vw;
+  margin-right: 20vw;
   float: left;
 }
 label:hover {
   color: #E74C3C;
 }
 
+.proimage {
+  width: 17vw;
+}
+
 .linetext {
   border-radius: 0.5em;
+  min-width: 200px;
+}
+
+.textstuff {
+  font-size: 1.7vw;
+}
+
+
+@media only screen and (max-width: 425px) {
+  .leftpart {
+    background-color: #E74C3C;
+    width: 100%;
+    height: 30%;
+    border-radius: inherit;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+  }
+  .rightpart {
+    background-color: #85929E;
+    width: 100%;
+    height: 70%;
+    border-radius: inherit;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+  }
+  .imageholder {
+    border-radius: 1em;
+    margin-top: 4vh;
+    justify-content: center;
+  }
+
+  .titletext {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    margin-top: 2vh;
+    font-size: 4.5vw;
+  }
+  .section-title {
+    font-size: 4vw;
+  }
+  .label {
+    font-size: 3vw;
+    vertical-align: top;
+  }
+  .textstuff {
+    font-size: 2.8vw;
+  }
 }
