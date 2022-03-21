@@ -43,6 +43,10 @@ A:active, A:hover, A:visited {
   color: gray;
   font-weight: bold;
   border-radius: 0.4em;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 3px;
+  padding-top: 3px;
 }
 
 .profile {
