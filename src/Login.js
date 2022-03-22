@@ -13,18 +13,23 @@ function Login() {
     navigate('/dashboard')
   }
   return (
+    <div className='contain'>
     <form id="form" className="loginbox" >
-      <h1 className="logintag">Login</h1>
+      <h1 className='greeting'>
+      <div className='greet1'></div>
+      <div className='greet2'></div>
+      </h1>
       <div className='logintag'>
       <input type="text" className='linetext username' name='username' placeholder='Username' required></input>
       </div>
       <div className='logintag'>
       <input type="password" className='linetext password' name='password' placeholder='Password' required></input>
       </div>
-      <div className='logintag submitbox'>
+      <div className='submitbox'>
       <button type="submit" className='submit' name='submit' value="Login" onClick={handleSubmit}>Login</button>
       </div>
     </form>
+    </div>
   );
 
 }
