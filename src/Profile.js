@@ -2,8 +2,7 @@ import React from "react";
 import logo from './Navbar/Placeholder.png'
 import { A } from "hookrouter";
 
-class Profile extends React.Component {
-  render() {
+function Profile() {
     return (
         <div className="profile">
           <div className="leftpart">
@@ -43,6 +42,6 @@ class Profile extends React.Component {
         </div>
     );
   }
-}
+
   
 export default Profile;

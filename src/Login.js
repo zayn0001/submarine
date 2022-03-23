@@ -1,6 +1,5 @@
 
 import {useRoutes, A, navigate} from 'hookrouter';
-import Routes from './router'
 import Navbar from './Navbar/Navbar';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
@@ -10,28 +9,27 @@ Login.propTypes = {
   setToken: PropTypes.func.isRequired
 }
 
-async function loginUser(credentials) {
-  return fetch('http://localhost:8080/login', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(credentials)
-  })
-    .then(data => data.json())
- }
+// async function loginUser(credentials) {
+//   return fetch('http://localhost:8080/login', {
+//     method: 'POST',
+//     headers: {
+//       'Content-Type': 'application/json'
+//     },
+//     body: JSON.stringify(credentials)
+//   })
+//     .then(data => data.json())
+//  }
 
-function Login({setToken}) {
+export default function Login({setToken}) {
   async function handleSubmit(event) {
     console.log("Sdfsdfsd")
     event.preventDefault()
-    const token = await loginUser({
-      username,
-      password
-    });
-    setToken(token);
-    ReactDOM.render(<Navbar/>, document.getElementById("root"))
-    navigate('/dashboard')
+    // const token = await loginUser({
+    //   username,
+    //   password
+    // });
+    // console.log(token)
+    setToken({"token":"324"});
   }
   const [username, setUserName] = useState();
   const [password, setPassword] = useState();
@@ -57,5 +55,3 @@ function Login({setToken}) {
 }
 
 
-
-export default Login();
