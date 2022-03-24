@@ -3,15 +3,38 @@ import {useRoutes, A, navigate} from 'hookrouter';
 import Routes from './router'
 import Navbar from './Navbar/Navbar';
 import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
+import React, {useState} from 'react'
 
+Login.propTypes = {
+  setToken: PropTypes.func.isRequired
+}
 
-function Login() {
+async function loginUser(credentials) {
+  return fetch('http://localhost:8080/login', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(credentials)
+  })
+    .then(data => data.json())
+ }
+
+function Login({setToken}) {
   async function handleSubmit(event) {
     console.log("Sdfsdfsd")
     event.preventDefault()
+    const token = await loginUser({
+      username,
+      password
+    });
+    setToken(token);
     ReactDOM.render(<Navbar/>, document.getElementById("root"))
     navigate('/dashboard')
   }
+  const [username, setUserName] = useState();
+  const [password, setPassword] = useState();
   return (
     <div className='contain'>
     <form id="form" className="loginbox" >
@@ -20,10 +43,10 @@ function Login() {
       <div className='greet2'></div>
       </h1>
       <div className='logintag'>
-      <input type="text" className='linetext username' name='username' placeholder='Username' required></input>
+      <input type="text" onChange={e => setUserName(e.target.value)} className='linetext username' name='username' placeholder='Username' required></input>
       </div>
       <div className='logintag'>
-      <input type="password" className='linetext password' name='password' placeholder='Password' required></input>
+      <input type="password" onChange={e => setPassword(e.target.value)} className='linetext password' name='password' placeholder='Password' required></input>
       </div>
       <div className='submitbox'>
       <button type="submit" className='submit' name='submit' value="Login" onClick={handleSubmit}>Login</button>
@@ -31,7 +54,8 @@ function Login() {
     </form>
     </div>
   );
-
 }
 
-export default Login;
+
+
+export default Login();

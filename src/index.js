@@ -1,15 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
 import ReactDOM from 'react-dom';
 import Dashboard from './Dashboard';
 import Login from './Login';
 import Navbar from './Navbar/Navbar';
 import reportWebVitals from './reportWebVitals';
 import './index.css'
+import App from './App'
 
 
 
 ReactDOM.render(
-  <Login/>,
+  <App/>,
   document.getElementById('root')
 );
 
