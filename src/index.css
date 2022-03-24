@@ -1,7 +1,7 @@
 body {
-  background-color: #141414;
-  background-repeat: no-repeat; 
-  background-size: cover;
+  background-color: #141414 !important;
+  background-repeat: no-repeat !important; 
+  background-size: cover !important;
   
   width: 100vw;
   height: 100vh;
@@ -16,6 +16,68 @@ A:active, A:hover, A:visited {
 	text-decoration: none;
 }
 
+.dashboard {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 2vh;
+  padding-right: 2vh;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.superselector {
+  margin-top: 10px;
+}
+
+.selectionsection {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  align-items: center;
+  margin: 20px;
+  background-color: darkgray;
+  height: 40vh;
+  border-radius: 2em;
+}
+
+.box {
+  background-color: #E74C3C;
+  max-width: 1000px;
+  max-height: 500px;
+  width: 70%;
+  height: 95%;
+  color: #141414;
+}
+
+.selector {
+  height: 20px;
+  width: 50px;
+  text-align: center;
+}
+
+.mapimage {
+  display: flex;
+  justify-content: flex-start;
+  align-content: stretch;
+  margin-left: 10px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;  
+  width: 100%;
+}
+
+.svgsection {
+  margin-left: 10px;
+}
+
+#main_canvas {
+  width: 1000px; 
+  height: 500px; 
+  border: gray solid 2px;
+}
 
 .logintag {
   display: flex;
