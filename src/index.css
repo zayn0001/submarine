@@ -63,8 +63,8 @@ A:active, A:hover, A:visited {
 }
 
 .profile {
-  max-width: 140vh;
-  width: 80vw;
+  max-width: 160vh;
+  width: 85vw;
   height: 80vh;
   margin-top: 5vh;
   background-color: #F2F3F4;
